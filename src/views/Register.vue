@@ -85,9 +85,8 @@ export default {
         username: this.username,
         email: this.email,
         password: this.password
-      }).then(user => {
-        console.log('successfully registered user', user)
-        this.$router.push({name: 'home'})
+      }).then(() => {
+        this.$router.push({name: 'globalFeed'})
       }) // call action which calls mutation
     }
   }
